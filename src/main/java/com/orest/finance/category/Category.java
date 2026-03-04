@@ -19,6 +19,34 @@ public class Category {
     @Column(nullable = false)
     private String type;
 
-public Category() {}
+    public Category() {}
+
+    public Integer getId() {
+        return id;
+    }
+    public Integer getUserId() {
+        return userId;
+    }
+    public String getName() {
+        return name;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+    public void setUserId(Integer userId) {
+        this.userId=userId;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+    public void setType(String type) {
+        this.type = type;
+    }
+
 
     }
