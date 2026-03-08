@@ -22,4 +22,8 @@ public class CategoryService {
         repository.deleteById(id);
     }
 
+    public void deleteById(Integer id) {
+        repository.deleteById(id);
+    }
+
 }
