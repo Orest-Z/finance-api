@@ -48,6 +48,11 @@ src/main/java/com/orest/finance
      ├─ CategoryRepository
      ├─ CategoryService
      └─ CategoryController
+ └─ transaction
+     ├─ Transaction
+     ├─ TransactionRepository
+     ├─ TransactionService
+     └─ TransactionController
 ```
 
 ## Purpose of the Project
