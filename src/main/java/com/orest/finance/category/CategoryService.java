@@ -26,4 +26,12 @@ public class CategoryService {
         repository.deleteById(id);
     }
 
+    public Category updateCategory(Integer id, Category updatedCategory) {
+        Category category = repository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Category not found"));
+
+        category.setName(updatedCategory.getName());
+
+        return repository.save(category);
+    }
 }
